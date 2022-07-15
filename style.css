@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Inter&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #969aa0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  text-decoration: none;
+  /*&:hover {
+    color: $yellow;
+  }*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  padding: 0;
+  margin: 0;
+  font-family: "Cardo", serif;
+  color: #1b3764;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.container {
+  max-width: 1330px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.button {
+  display: inline-block;
+  border: 2px solid #ffca42;
+  background-color: #ffca42;
+  padding: 18px 50px;
+  color: #1b3764;
+  font-family: "Cardo", serif;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.button_outline {
+  background-color: transparent;
+}
+
+.button_primary {
+  border-color: #1b3764;
+  background-color: #1b3764;
+  color: #ffffff;
+}
+
+.section_title_center,
+.section_title_left {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  padding: 0 0 23px;
+  margin-bottom: 3px;
+}
+
+.section_title_center::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: inherit;
+  background-color: #ffca42;
+}
+
+.section_title_left::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  text-align: inherit;
+  background-color: #ffca42;
+}
+
+.card_title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  text-transform: capitalize;
+}
+
+.section1 {
+  padding: 126px 0;
+}
+.section1 .section1_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px -8px 0;
+}
+.section1 .section1_card {
+  width: 25%;
+  min-width: 329px;
+  padding: 8px;
+  text-align: center;
+}
+.section1 .section1_card .card_title {
+  margin: 22px 0 16px;
+}
+
+.section2 {
+  padding: 70px 0;
+  background-color: #1b3764;
+  color: #ffffff;
+}
+.section2 .section2_content {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+}
+.section2 .section2_content .col {
+  width: 50%;
+}
+.section2 .section2_content .col .section_title_left {
+  color: #ffffff;
+  text-align: left;
+}
+.section2 .section2_content .col p {
+  margin: 27px 0;
+  color: #ffffff;
+}
+.section2 .section2_content .col .img {
+  text-align: right;
+}
+.section2 .section2_content .button {
+  color: #ffffff;
+}
+
+.section3 {
+  width: 100%;
+  padding: 116px 0 110px;
+  background-color: #f4f8ff;
+  text-align: center;
+}
+.section3 .section3_content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 55px -15px;
+  text-align: left;
+}
+.section3 .section3_content .col {
+  width: 50%;
+  padding: 15px;
+}
+.section3 .section3_card {
+  width: 100%;
+  height: 100%;
+  padding: 42px 40px;
+  background: #ffffff;
+}
+.section3 .section3_card .card_title {
+  margin-bottom: 21px;
+}
+.section3 .section3_card .category_list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  list-style-type: none;
+  padding: 0;
+}
+.section3 .section3_card .category_list li {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 31px;
+  flex-basis: 230px;
+  position: relative;
+}
+.section3 .section3_card .category_list li::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ffca42;
+  margin-right: 10px;
+}
+.section3 .section3_card .category_list li span {
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #969aa0;
+  padding-left: 10px;
+}
+.section3 .links {
+  text-align: center;
+  margin-top: 34px;
+}
+.section3 .links .button {
+  padding-left: 92px;
+  padding-right: 92px;
+}
+.section3 .links .link {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #969aa0;
+}
+.section3 .links .link span {
+  color: #1b3764;
+}
+
+.section4 {
+  padding: 150px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
